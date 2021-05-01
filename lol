@@ -257,7 +257,7 @@ Combat.TextColor3 = Color3.fromRGB(255, 255, 255)
 Combat.TextScaled = true
 Combat.TextSize = 14.000
 Combat.TextWrapped = true
-Combat.MouseButton1Down:Connet(function()
+Combat.MouseButton1Down:Connect(function()
 	CombatFrame.Visible = true
 	TeleportsFrame.Visible = false
 	AutoBuysFrame.Visible = false
@@ -277,7 +277,7 @@ Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
 Teleports.TextScaled = true
 Teleports.TextSize = 14.000
 Teleports.TextWrapped = true
-Teleports.MouseButton1Down:Connet(function()
+Teleports.MouseButton1Down:Connect(function()
 	CombatFrame.Visible = false
 	TeleportsFrame.Visible = true
 	AutoBuysFrame.Visible = false
@@ -297,7 +297,7 @@ Autobuys.TextColor3 = Color3.fromRGB(255, 255, 255)
 Autobuys.TextScaled = true
 Autobuys.TextSize = 14.000
 Autobuys.TextWrapped = true
-Autobuys.MouseButton1Down:Connet(function()
+Autobuys.MouseButton1Down:Connect(function()
 	CombatFrame.Visible = false
 	TeleportsFrame.Visible = false
 	AutoBuysFrame.Visible = true
@@ -318,7 +318,7 @@ Autofarms.TextColor3 = Color3.fromRGB(255, 255, 255)
 Autofarms.TextScaled = true
 Autofarms.TextSize = 14.000
 Autofarms.TextWrapped = true
-Autofarms.MouseButton1Down:Connet(function()
+Autofarms.MouseButton1Down:Connect(function()
 	CombatFrame.Visible = false
 	TeleportsFrame.Visible = false
 	AutoBuysFrame.Visible = false
@@ -338,7 +338,7 @@ Extras.TextColor3 = Color3.fromRGB(255, 255, 255)
 Extras.TextScaled = true
 Extras.TextSize = 14.000
 Extras.TextWrapped = true
-Extras.MouseButton1Down:Connet(function()
+Extras.MouseButton1Down:Connect(function()
 	CombatFrame.Visible = false
 	TeleportsFrame.Visible = false
 	AutoBuysFrame.Visible = false
@@ -2085,7 +2085,7 @@ TargetGui.MouseButton1Down:Connect(function()
 	TextButton_2.TextScaled = true
 	TextButton_2.TextSize = 14.000
 	TextButton_2.TextWrapped = true
-	TextButton_2.MouseButton1Down:Connct(function()
+	TextButton_2.MouseButton1Down:Connect(function()
 		local TargetPlr = TextBox.Text
 		function getRoot(char)
 			local rootPart = char:FindFirstChild('HumanoidRootPart') or char:FindFirstChild('Torso') or char:FindFirstChild('UpperTorso')
